@@ -3,5 +3,6 @@ addons:
     packages:
     - libboost-dev
     - libhdf5-dev
+    - pybind11-dev
 script:
   cmake src && make -j4 -l4
