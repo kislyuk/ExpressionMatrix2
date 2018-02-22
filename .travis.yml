@@ -10,6 +10,8 @@ install:
   - wget -q http://mirrors.kernel.org/ubuntu/pool/universe/p/pybind11/pybind11-dev_2.0.1-4_all.deb
   - sudo dpkg -x *.deb /
 script:
+  - ls /usr/include/python3.5m
+  - ls /usr/local/include/python3.5
   - cmake src
   - make -j4 -l4
 sudo: true
