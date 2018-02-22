@@ -4,4 +4,4 @@ addons:
     - libboost-dev
     - libhdf5-dev
 script:
-  cmake src && make -j
+  cmake src && make -j4 -l4
