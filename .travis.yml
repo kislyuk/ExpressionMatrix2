@@ -2,5 +2,6 @@ addons:
   apt:
     packages:
     - libboost-dev
+    - libhdf5-dev
 script:
   cmake src && make -j
