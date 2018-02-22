@@ -1,2 +1,6 @@
+addons:
+  apt:
+    packages:
+    - libboost-dev
 script:
   cmake src && make -j
