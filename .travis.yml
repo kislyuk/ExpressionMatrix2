@@ -6,7 +6,8 @@ addons:
     - libboost-dev
     - libhdf5-dev
 install:
-  - pip install pybind11
+  - git clone https://github.com/pybind/pybind11.git
+  - python pybind11/setup.py install_headers
 script:
   - which python
   - dpkg -L python3-all-dev
