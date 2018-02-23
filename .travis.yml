@@ -9,10 +9,5 @@ install:
   - git clone https://github.com/pybind/pybind11.git
   - python pybind11/setup.py install_headers
 script:
-  - which python
-  - dpkg -L python3-all-dev
-  - dpkg -L python3-dev
-  - ls /usr/include/python3.5m
-  - ls /usr/local/include/python3.5
   - cmake src
   - make -j4 -l4
