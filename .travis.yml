@@ -5,10 +5,8 @@ addons:
     packages:
     - libboost-dev
     - libhdf5-dev
-    - python3-all-dev
 install:
-  - wget -q http://mirrors.kernel.org/ubuntu/pool/universe/p/pybind11/pybind11-dev_2.0.1-4_all.deb
-  - sudo dpkg -x *.deb /
+  - pip install pybind11
 script:
   - which python
   - dpkg -L python3-all-dev
